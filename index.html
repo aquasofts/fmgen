@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="cn-zn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>父母性别查询器</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+        }
+        input[type="text"] {
+            padding: 10px;
+            margin-bottom: 20px;
+            width: 300px;
+            font-size: 16px;
+        }
+        #response {
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+    <style>
+        .fixed-top {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            /* 其他样式 */
+            background-color: #f0f0f0;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed-top">
+        <h1>父母性别查询器</h1>
+    </div>
+
+    </div>
+    <div class="container">
+        <input type="text" id="userInput" placeholder="请输入您要查询的是父亲还是母亲">
+        <p id="response"></p>
+    </div>
+
+    <script>
+        const userInput = document.getElementById('userInput');
+        const response = document.getElementById('response');
+
+        userInput.addEventListener('input', function() {
+            if (this.value === '父亲') {
+                response.textContent = '查询完毕，您的父亲性别为：男';
+            } else if (this.value === '母亲') {
+                response.textContent = '查询完毕，您的母亲性别为：女';
+            } else {
+                response.textContent = `您的输入有误，请重新输入！`;
+            }
+        });
+    </script>
+</body>
+</html>
