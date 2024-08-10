@@ -1,0 +1,8 @@
+# 父母性别查询器
+<p>纯前端实现父母性别查询，无后端服务，无数据存储。</p>
+<p>多次试验，高达99%准确率，快一起来试试吧!</p>
+<p>缺点是目前仅适配了手机端</p>
+
+###以下为手机端实例
+
+![image](https://github.com/aquasofts/fmgen/blob/main/picture/image.jpg)
