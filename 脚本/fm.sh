@@ -109,6 +109,18 @@ install_acme_sh(){
     fi
 }
 
+unzip_sh(){
+# 解压文件到指定目录
+DEST_DIR="/usr/share/nginx/fm"
+mkdir -p "$DEST_DIR"
+unzip -o "$ZIP_FILE" -d "$DEST_DIR"
+
+# 清理临时文件
+rm -rf "$TEMP_DIR"
+
+echo "文件已下载并解压到 $DEST_DIR"
+}
+
 # 下载并替换 Nginx 配置文件
 download_nginx_config(){
     local url="https://raw.githubusercontent.com/aquasofts/fmgen/main/%E8%84%9A%E6%9C%AC/fm"
@@ -138,7 +150,7 @@ setup_ssl_cert(){
     fi
 
     local WebPort=80
-    read -p "请输入你所希望使用的端口，建议使用80端口: " WebPort
+    read -p "请输入你所希望使用的端口，推荐使用 80 端口: " WebPort
     if [[ ! "$WebPort" =~ ^[0-9]+$ ]] || [ "$WebPort" -gt 65535 ] || [ "$WebPort" -lt 1 ]; then
         log_yellow "你所选择的端口 $WebPort 为无效值，将使用默认 80 端口进行申请。"
         WebPort=80
@@ -196,6 +208,7 @@ main(){
     check_install_tools
     install_nginx
     install_acme_sh
+    unzip_sh
     download_nginx_config
     setup_ssl_cert
 }
