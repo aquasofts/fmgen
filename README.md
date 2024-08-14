@@ -1,9 +1,16 @@
-# 父母性别查询器
-<p>纯前端实现父母性别查询，无后端服务，无数据存储。</p>
-<p>多次试验，高达99%准确率，快一起来试试吧!</p>
-<p>缺点是目前仅适配了手机端</p>
+### 父母性别查询器
 
-一键搭建脚本：
+纯前端实现父母性别查询，无后端服务，无数据存储。
+
+多次试验，高达99%准确率，快一起来试试吧!
+
+缺点是目前仅适配了手机端
+
+### 使用方法
+
+直接将release中的fmgen-main.zip放入网页根目录解压即可
+
+或者也可以使用一键搭建脚本：
 
 `wget -N --no-check-certificate https://raw.githubusercontent.com/aquasofts/fmgen/main/%E8%84%9A%E6%9C%AC/fm.sh && chmod +x fm.sh && ./fm.sh`
 
