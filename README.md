@@ -14,6 +14,10 @@
 
 `wget -N --no-check-certificate https://raw.githubusercontent.com/aquasofts/fmgen/main/%E8%84%9A%E6%9C%AC/fm.sh && chmod +x fm.sh && ./fm.sh`
 
+若您的机器位于中国内地，可使用以下脚本：
+
+`wget -N --no-check-certificate https://raw.gitcode.com/aquasofts/fmgen/raw/main/%E8%84%9A%E6%9C%AC/fm.sh && chmod +x fm.sh && ./fm.sh`
+
 ### 啰嗦一句
 
 1.安装nginx过程可能会有点慢，请耐心等待。所有选项都输入"y"即可。
