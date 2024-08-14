@@ -5,7 +5,7 @@
 
 一键搭建脚本：
 
-`wget -N --no-check-certificate https://raw.githubusercontent.com/aquasofts/fmgen/main/%E8%84%9A%E6%9C%AC/fm.sh && chmod +x home.sh && ./home.sh`
+`wget -N --no-check-certificate https://raw.githubusercontent.com/aquasofts/fmgen/main/%E8%84%9A%E6%9C%AC/fm.sh && chmod +x fm.sh && ./fm.sh`
 
 ### 啰嗦一句
 
