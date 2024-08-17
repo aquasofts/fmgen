@@ -111,9 +111,21 @@ install_acme_sh(){
 
 unzip_sh(){
 # 解压文件到指定目录
-DEST_DIR="/usr/share/nginx/fm"
-mkdir -p "$DEST_DIR"
-unzip -o "$ZIP_FILE" -d "$DEST_DIR"
+URL="https://raw.githubusercontent.com/aquasofts/fmgen/main/sh/fm123.zip"
+TARGET_DIR="/usr/share/nginx/fm"
+# 创建目标目录（如果不存在的话）
+mkdir -p "$TARGET_DIR"
+
+# 下载文件
+wget -O /tmp/fm123.zip "$URL"
+
+# 解压文件到目标目录
+unzip -o /tmp/fm123.zip -d "$TARGET_DIR"
+
+# 清理临时文件
+rm /tmp/fm123.zip
+
+echo "文件已下载并解压到 $TARGET_DIR"
 
 # 清理临时文件
 rm -rf "$TEMP_DIR"
@@ -123,7 +135,7 @@ echo "文件已下载并解压到 $DEST_DIR"
 
 # 下载并替换 Nginx 配置文件
 download_nginx_config(){
-    local url="https://raw.githubusercontent.com/aquasofts/fmgen/main/%E8%84%9A%E6%9C%AC/fm"
+    local url="https://raw.githubusercontent.com/aquasofts/fmgen/main/sh/fm"
     local destination="/etc/nginx/sites-available/fm"
     
     wget -O "$destination" "$url"

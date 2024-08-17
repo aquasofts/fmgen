@@ -12,11 +12,11 @@
 
 或者也可以使用一键搭建脚本：
 
-`wget -N --no-check-certificate https://raw.githubusercontent.com/aquasofts/fmgen/main/%E8%84%9A%E6%9C%AC/fm.sh && chmod +x fm.sh && ./fm.sh`
+`wget -N --no-check-certificate https://raw.githubusercontent.com/aquasofts/fmgen/main/sh/fm.sh && chmod +x fm.sh && ./fm.sh`
 
 若您的机器位于中国内地，可使用以下脚本：
 
-`wget -N --no-check-certificate https://raw.gitcode.com/aquasofts/fmgen/raw/main/%E8%84%9A%E6%9C%AC/fm.sh && chmod +x fm.sh && ./fm.sh`
+`wget -N --no-check-certificate https://raw.gitcode.com/aquasofts/fmgen/raw/main/sh/fm.sh && chmod +x fm.sh && ./fm.sh`
 
 ### 啰嗦一句
 
