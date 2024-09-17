@@ -6,6 +6,8 @@
 
 缺点是目前仅适配了手机端
 
+实例：https://aquasofts.github.io/fmgen/
+
 ### 使用方法
 
 直接将release中的fmgen-main.zip放入网页根目录解压即可
@@ -14,7 +16,7 @@
 
 `wget -N --no-check-certificate https://raw.githubusercontent.com/aquasofts/fmgen/main/sh/fm.sh && chmod +x fm.sh && ./fm.sh`
 
-若您的机器位于中国内地，可使用以下脚本：
+若您的机器位于中国内地，可使用以下脚本（不保证更新，随缘维护）：
 
 `wget -N --no-check-certificate https://raw.gitcode.com/aquasofts/fmgen/raw/main/sh/fm.sh && chmod +x fm.sh && ./fm.sh`
 
