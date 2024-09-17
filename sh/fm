@@ -9,6 +9,8 @@ server {
     listen 443 ssl;
     listen [::]:443 ssl;
     server_name yourdomain; # 你的域名
+    index index.html;                         # 默认页面
+	root /usr/share/nginx/fm;               # 网页根目录路径
 
     ssl_session_timeout 30m;
     ssl_protocols TLSv1.1 TLSv1.2 TLSv1.3;
